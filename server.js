@@ -348,10 +348,11 @@ app.listen(PORT, () => {
 // ====================================================================================
 setInterval(async () => {
   try {
-    const response = await fetch(`https://casitaenlaluna.onrender.com`);
+    const response = await fetch(`https://nuevofeeddavid.onrender.com`);
     const data = await response.json();
     console.log("🔄 Auto-ping realizado:", data.service);
   } catch (error) {
     console.error("❌ Error en auto-ping:", error.message);
   }
+
 }, 300000); // Cada 5 minutos
